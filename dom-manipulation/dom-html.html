@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <h1>
+        THE TITLE OF YOUR WEBPAGE
+      </h1>
+      <div id="container">
+        
+      </div>
+      <h1 id="divId"> here is h1 </h1>
+
+      <button id="btn">the fucking button</button>
+      <script>
+  const container = document.querySelector('#container');
+  
+  const cu = document.createElement('div');
+  cu.textContent = 'This is the glorious text-content!';
+  container.appendChild(cu);
+
+  const contentRedAnchor = document.createElement("a");
+  contentRedAnchor.style.cssText = "color:red";
+  contentRedAnchor.textContent = "This is the red anchor";
+  container.appendChild(contentRedAnchor);
+
+  const contentBlueH3 = document.createElement("h3");
+  contentBlueH3.style.cssText = 'color: blue';
+  contentBlueH3.textContent = "i am fucking blue";
+  container.appendChild(contentBlueH3);
+
+  
+
+  const contentDiv = document.createElement("div");
+  contentDiv.textContent = "the fucking div";
+  contentDiv.style.cssText = "color:blue; background: pink";
+  container.appendChild(contentDiv);
+
+  const contentH1 = document.createElement("h1");
+  contentH1.textContent = "i am appended to the div";
+  contentDiv.appendChild(contentH1);
+
+  const contentP = document.createElement("p");
+  contentP.textContent = "i am also appended to the fucking div";
+  contentDiv.appendChild(contentP);
+  
+  const btn = document.querySelector("#btn");
+  btn.addEventListener('click', function (e) {
+  e.target.style.background = "blue";
+});
+   
+      
+      </script>
+      
+    </body>
+  </head>
+  </html>
